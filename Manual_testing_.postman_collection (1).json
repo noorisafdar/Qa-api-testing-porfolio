@@ -1,0 +1,312 @@
+{
+  "info": {
+    "_postman_id": "d8e025e7-911b-4310-bbd1-7dff4489a3f7",
+    "name": "Manual API Testing - Public Portfolio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55187855"
+  },
+  "item": [
+    {
+      "name": "error",
+      "item": [
+        {
+          "name": "https://apis.azornellix.com/api/superadmin/universities",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{ACCESS_TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-CSRFTOKEN",
+                "value": "{{CSRF_TOKEN}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE_URL}}/api/superadmin/universities",
+              "protocol": "https",
+              "host": [
+                "{{BASE_URL}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      }
+    },
+    {
+      "name": "https://apis.azornellix.com/api/superadmin/universities/1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{ACCESS_TOKEN}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/api/superadmin/universities/1",
+          "protocol": "https",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "https://apis.azornellix.com/api/superadmin/identities/18",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{ACCESS_TOKEN}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "X-CSRFTOKEN",
+            "value": "{{CSRF_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BASE_URL}}/api/superadmin/identities/18",
+          "protocol": "https",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "https://apis.azornellix.com/api/superadmin/identities/18",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{ACCESS_TOKEN}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "X-CSRFTOKEN",
+            "value": "{{CSRF_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/superadmin/identities/18",
+          "protocol": "https",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "https://apis.azornellix.com/api/superadmin/admins/65",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{ACCESS_TOKEN}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/api/superadmin/admins/65",
+          "protocol": "https",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "https://apis.azornellix.com/api/superadmin/identities",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{ACCESS_TOKEN}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-CSRFTOKEN",
+            "value": "{{CSRF_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Automation Test\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/superadmin/identities",
+          "protocol": "https",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "https://apis.azornellix.com/api/superadmin/admins",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{ACCESS_TOKEN}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-CSRFTOKEN",
+            "value": "{{CSRF_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/superadmin/admins",
+          "protocol": "https",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "https://apis.azornellix.com/api/students/messages/",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{ACCESS_TOKEN}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-CSRFTOKEN",
+            "value": "{{CSRF_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/students/messages/",
+          "protocol": "https",
+          "host": [
+            "{{BASE_URL}}"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "https://api.example.com",
+      "type": "string"
+    },
+    {
+      "key": "ACCESS_TOKEN",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "CSRF_TOKEN",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
